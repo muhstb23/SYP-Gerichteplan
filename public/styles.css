@@ -60,6 +60,14 @@ header {
   width: 40%;
 }
 
+#dadjokeFormat img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  height: 22rem;
+  margin-top: 5px;
+}
+
 #dadjokeFormat {
   display: flex;
   flex-direction: column;
