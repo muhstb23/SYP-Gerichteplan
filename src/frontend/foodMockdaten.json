@@ -1,0 +1,305 @@
+{
+  "gerichte": [
+    {
+      "name": "Sauerbraten",
+      "zutaten": [
+        "Rindfleisch",
+        "Essig",
+        "Rotwein",
+        "Zwiebeln",
+        "Karotten",
+        "Sellerie",
+        "Lorbeerblätter",
+        "Pfefferkörner",
+        "Nelken",
+        "Zucker",
+        "Salz"
+      ]
+    },
+    {
+      "name": "Königsberger Klopse",
+      "zutaten": [
+        "Hackfleisch",
+        "Brötchen",
+        "Ei",
+        "Zwiebeln",
+        "Kapern",
+        "Butter",
+        "Mehl",
+        "Milch",
+        "Zitronensaft",
+        "Salz",
+        "Pfeffer"
+      ]
+    },
+    {
+      "name": "Maultaschen",
+      "zutaten": [
+        "Nudelteig",
+        "Hackfleisch",
+        "Spinat",
+        "Zwiebeln",
+        "Brötchen",
+        "Ei",
+        "Petersilie",
+        "Salz",
+        "Pfeffer"
+      ]
+    },
+    {
+      "name": "Grünkohl mit Pinkel",
+      "zutaten": [
+        "Grünkohl",
+        "Pinkelwurst",
+        "Kartoffeln",
+        "Zwiebeln",
+        "Speck",
+        "Senf",
+        "Salz",
+        "Pfeffer"
+      ]
+    },
+    {
+      "name": "Finkenwerder Scholle",
+      "zutaten": [
+        "Scholle",
+        "Speck",
+        "Zwiebeln",
+        "Butter",
+        "Mehl",
+        "Zitrone",
+        "Salz",
+        "Pfeffer"
+      ]
+    },
+    {
+      "name": "Labskaus",
+      "zutaten": [
+        "Kartoffeln",
+        "Corned Beef",
+        "Zwiebeln",
+        "Rote Bete",
+        "Gewürzgurken",
+        "Ei",
+        "Butter",
+        "Salz",
+        "Pfeffer"
+      ]
+    },
+    {
+      "name": "Fleischpflanzerl",
+      "zutaten": [
+        "Hackfleisch",
+        "Brötchen",
+        "Ei",
+        "Zwiebeln",
+        "Senf",
+        "Petersilie",
+        "Salz",
+        "Pfeffer",
+        "Öl"
+      ]
+    },
+    {
+      "name": "Erbsensuppe",
+      "zutaten": [
+        "Erbsen",
+        "Kartoffeln",
+        "Karotten",
+        "Sellerie",
+        "Zwiebeln",
+        "Speck",
+        "Gemüsebrühe",
+        "Salz",
+        "Pfeffer"
+      ]
+    },
+    {
+      "name": "Linseneintopf",
+      "zutaten": [
+        "Linsen",
+        "Kartoffeln",
+        "Karotten",
+        "Sellerie",
+        "Zwiebeln",
+        "Würstchen",
+        "Essig",
+        "Salz",
+        "Pfeffer"
+      ]
+    },
+    {
+      "name": "Kartoffelsuppe",
+      "zutaten": [
+        "Kartoffeln",
+        "Karotten",
+        "Sellerie",
+        "Zwiebeln",
+        "Gemüsebrühe",
+        "Sahne",
+        "Butter",
+        "Salz",
+        "Pfeffer"
+      ]
+    },
+    {
+      "name": "Pizza Margherita",
+      "zutaten": [
+        "Pizzateig",
+        "Tomatensauce",
+        "Mozzarella",
+        "Basilikum",
+        "Olivenöl",
+        "Salz"
+      ]
+    },
+    {
+      "name": "Spaghetti Bolognese",
+      "zutaten": [
+        "Spaghetti",
+        "Hackfleisch",
+        "Tomaten",
+        "Zwiebeln",
+        "Karotten",
+        "Sellerie",
+        "Knoblauch",
+        "Olivenöl",
+        "Salz",
+        "Pfeffer"
+      ]
+    },
+    {
+      "name": "Käsespätzle",
+      "zutaten": [
+        "Spätzle",
+        "Emmentaler",
+        "Zwiebeln",
+        "Butter",
+        "Mehl",
+        "Ei",
+        "Salz"
+      ]
+    },
+    {
+      "name": "Kartoffelpuffer",
+      "zutaten": [
+        "Kartoffeln",
+        "Ei",
+        "Mehl",
+        "Zwiebeln",
+        "Salz",
+        "Pfeffer",
+        "Öl"
+      ]
+    },
+    {
+      "name": "Falafel",
+      "zutaten": [
+        "Kichererbsen",
+        "Knoblauch",
+        "Zwiebeln",
+        "Petersilie",
+        "Koriander",
+        "Kreuzkümmel",
+        "Mehl",
+        "Salz",
+        "Öl"
+      ]
+    },
+    {
+      "name": "Kaiserschmarrn",
+      "zutaten": [
+        "Mehl",
+        "Milch",
+        "Ei",
+        "Zucker",
+        "Butter",
+        "Rosinen",
+        "Puderzucker"
+      ]
+    },
+    {
+      "name": "Schwarzwälder Kirschtorte",
+      "zutaten": [
+        "Schokoladenbiskuit",
+        "Kirschen",
+        "Sahne",
+        "Kirschwasser",
+        "Zucker",
+        "Schokoraspeln"
+      ]
+    },
+    {
+      "name": "Rote Grütze",
+      "zutaten": [
+        "Erdbeeren",
+        "Himbeeren",
+        "Johannisbeeren",
+        "Kirschen",
+        "Zucker",
+        "Speisestärke"
+      ]
+    },
+    {
+      "name": "Burger",
+      "zutaten": [
+        "Burgerbrötchen",
+        "Rinderpatty",
+        "Salat",
+        "Tomaten",
+        "Gurken",
+        "Käse",
+        "Ketchup",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "name": "Sushi",
+      "zutaten": [
+        "Sushireis",
+        "Reisessig",
+        "Nori",
+        "Lachs",
+        "Avocado",
+        "Gurke",
+        "Sojasauce",
+        "Wasabi"
+      ]
+    },
+    {
+      "name": "Tacos",
+      "zutaten": [
+        "Tortillas",
+        "Hackfleisch",
+        "Tomaten",
+        "Salat",
+        "Käse",
+        "Zwiebeln",
+        "Taco-Gewürz"
+      ]
+    },
+    {
+      "name": "Panang Curry",
+      "zutaten": [
+        "Hähnchen",
+        "Kokosmilch",
+        "Panang-Currypaste",
+        "Limettenblätter",
+        "Fischsauce",
+        "Zucker",
+        "Chili"
+      ]
+    },
+    {
+      "name": "Asado",
+      "zutaten": [
+        "Rindfleisch",
+        "Salz",
+        "Knoblauch",
+        "Petersilie",
+        "Olivenöl",
+        "Chili"
+      ]
+    }
+  ]
+}

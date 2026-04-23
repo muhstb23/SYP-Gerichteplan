@@ -1,0 +1,193 @@
+body {
+  background-color: #171944;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(bilder/Background.png);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: rgba(33, 32, 94, 0.6); /* Dunkelblau für Header Hintergrund */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.lagerFlex {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#ingredient-list ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+#ingredient-list li::before {
+  content: "★";
+  margin-right: 8px;
+  width: 220px;
+}
+
+.bildImg a {
+  height: 200px;
+  width: 200px;
+}
+
+.headerFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25rem;
+}
+
+#ingredient-list {
+  float: left;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 16px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  overflow: hidden;              /* 🔥 wichtig */
+  background-clip: padding-box;  /* 🔥 wichtig */
+
+  transform: translateZ(0);      /* 🔧 Firefox Fix */
+  will-change: transform;
+  margin: 1rem;
+  width: 40%;
+}
+
+#dadjokeFormat {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(12px);
+  width: 40%;
+
+  border-radius: 16px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  overflow: hidden;              /* 🔥 wichtig */
+  background-clip: padding-box;  /* 🔥 wichtig */
+
+  transform: translateZ(0);      /* 🔧 Firefox Fix */
+  will-change: transform;
+  margin: 1rem;
+}
+
+.title {
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.title:hover {
+  color: #9fcfe3;
+}
+
+.menuLink a:hover {
+  color: #9fcfe3;
+}
+
+.menuLink {
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.menuLink:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.menuLink a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* hier maybe 💥 */
+  gap: 1.5rem;
+}
+
+.dish-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 16px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  overflow: hidden;              /* 🔥 wichtig */
+  background-clip: padding-box;  /* 🔥 wichtig */
+
+  transform: translateZ(0);      /* 🔧 Firefox Fix */
+  will-change: transform;
+}
+
+.dish-card:hover { /* Ecke ist wie OR Funktion */ /* <-- Hurensohn Ecke */
+  transform: translateY(-5px)  scale(1.02);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3); /*nicht schuld für Ecke in Box*/
+}
+.dish-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.dish-name a {
+  text-decoration: none;
+  color: white;
+}
+.dish-name a:hover {
+  color: #9fcfe3;
+}
+.dish-status {
+  font-weight: bold;
+}
+.dish-description {
+  font-size: 0.9rem;
+  color: #d3dce0;
+  margin-bottom: 0.5rem;
+}
+.available {
+  color: #56e35b;
+}
+.unavailable {
+  color: red;
+}
+ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+li {
+  color: white;
+  font-size: large;
+}
+
+#dadjoke {
+  color: white;
+}

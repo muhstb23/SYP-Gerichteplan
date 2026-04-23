@@ -1,0 +1,29 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.players1 = void 0;
+exports.players1 = [
+    {
+        "id": 1,
+        "firstname": "Lionel",
+        "lastname": "Messi",
+        "club": "Inter Miami",
+        "age": 38,
+        "country": "Argentina"
+    },
+    {
+        "id": 2,
+        "firstname": "Cristiano",
+        "lastname": "Ronaldo",
+        "club": "Al Nassr",
+        "age": 40,
+        "country": "Portugal"
+    },
+    {
+        "id": 3,
+        "firstname": "Kylian",
+        "lastname": "Mbappé",
+        "club": "Real Madrid",
+        "age": 26,
+        "country": "France"
+    }
+];

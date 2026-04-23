@@ -1,0 +1,9 @@
+<div id="filter-bar">
+    <select id="filter">
+        <option value="3">Maximal 3 Zutaten</option>
+        <option value="5">Maximal 5 Zutaten</option>
+        <option value="8">Maximal 8 Zutaten</option>
+        <option value="12">Maximal 12 Zutaten</option>
+        <option value="15">Maximal 15 Zutaten</option>
+    </select>
+</div> <br> <br>

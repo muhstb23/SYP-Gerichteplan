@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ES6",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+
+    "rootDir": "./",
+    "outDir": "../../public/js",
+
+    "allowJs": false,
+    "skipLibCheck": true,
+
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["./**/*.ts"]
+}
