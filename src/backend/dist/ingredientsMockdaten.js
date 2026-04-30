@@ -31,7 +31,6 @@ exports.ingredientsMockdaten = [
     { "name": "Grünkohl", "available": false },
     { "name": "Geselchtes", "available": false },
     { "name": "Pinkelwurst", "available": false },
-    { "name": "Kartoffeln", "available": false },
     { "name": "Speck", "available": false },
     { "name": "Senf", "available": false },
     { "name": "Haferbrei", "available": false },

@@ -71,7 +71,7 @@ export const foodMockDaten: Food[] = [
             "Senf",
             "Salz",
             "Pfeffer",
-            "Hafferbrei"
+            "Haferbrei"
         ],
         "link": "https://www.chefkoch.de/rezepte/19371005029738/Gruenkohl-mit-Pinkel-nach-Bremer-Art.html"
     },
@@ -362,7 +362,7 @@ export const foodMockDaten: Food[] = [
         "zutaten": [
             "Hähnchen",
             "Kokosmilch",
-            "Erdnüssen",
+            "Erdnüsse",
             "Limettenblätter",
             "Bohnen",
             "Fischsauce",
