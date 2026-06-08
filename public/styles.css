@@ -34,23 +34,6 @@ body {
   box-shadow: 0 12px 40px rgba(0,0,0,0.3);
 }
 
-/* Card Design */
-.household-card {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(12px);
-
-  border-radius: 16px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-
-  overflow: hidden;              /* 🔥 wichtig */
-  background-clip: padding-box;  /* 🔥 wichtig */
-
-  transform: translateZ(0);      /* 🔧 Firefox Fix */
-  will-change: transform;
-}
-
 .household-card h1 {
   color: #9fcfe3;
 }
@@ -77,9 +60,24 @@ body {
   box-shadow: 0 12px 40px rgba(0,0,0,0.3);
 }
 
-/* Card Design */
-.household-card {
-  background: rgba(255, 255, 255, 0.15);
+.household-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(12px);
+  z-index: 0;
+
+  animation: fadeBg 18s ease-in-out infinite;
+}
+
+.household-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.dish-card {
+
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(12px);
 
@@ -92,6 +90,32 @@ body {
 
   transform: translateZ(0);      /* 🔧 Firefox Fix */
   will-change: transform;
+
+
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Card Design */
+.household-card {
+
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 16px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  overflow: hidden;              /* 🔥 wichtig */
+  background-clip: padding-box;  /* 🔥 wichtig */
+
+  transform: translateZ(0);      /* 🔧 Firefox Fix */
+  will-change: transform;
+
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .household-card h1 {
@@ -278,7 +302,8 @@ main {
 }
 
 .dish-card {
-  background: rgba(255, 255, 255, 0.15);
+
+
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(12px);
 
@@ -291,6 +316,37 @@ main {
 
   transform: translateZ(0);      /* 🔧 Firefox Fix */
   will-change: transform;
+
+
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.dish-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(12px);
+  z-index: 0;
+
+  animation: fadeBg 18s ease-in-out infinite;
+}
+
+.dish-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes fadeBg {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
 }
 
 .dish-card:hover { /* Ecke ist wie OR Funktion */ /* <-- Hurensohn Ecke */
@@ -317,12 +373,6 @@ main {
   color: #d3dce0;
   margin-bottom: 0.5rem;
 }
-.available {
-  color: #56e35b;
-}
-.unavailable {
-  color: #ff0000;
-}
 ul {
   margin: 0;
   padding-left: 1.2rem;
@@ -348,4 +398,59 @@ h2 {
 
 a {
   text-decoration: none;
+}
+
+h3 {
+  color: white;
+}
+
+.available {
+  color: #56e35b;
+  animation-name: availableAni;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.unavailable {
+  color: #ff3333;
+  animation-name: unavailableAni;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes unavailableAni {
+  0%   {color: #ff3333;}
+  25%  {color: #ff0000;}
+  50%  {color: #c60000;}
+  75%  {color: #ff0000;}
+  100% {color: #ff3333;}
+}
+
+@keyframes availableAni {
+  0%   {color: #56e35b;}
+  25%  {color: #7ec157;}
+  50%  {color: #8ac15a;}
+  75%  {color: #7ec157;}
+  100% {color: #56e35b;}
+}
+
+/* The animation code */
+@keyframes myAnimation {
+  0%   {background-color: red;}
+  20%  {background-color: yellow;}
+  40%  {background-color: lime;}
+  50%  {background-color: deepskyblue;}
+  60%  {background-color: lime}
+  80%  {background-color: yellow;}
+  100% {background-color: red;}
+}
+
+/* The element to apply the animation to */
+.animationTest {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: myAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+
 }
