@@ -47,3 +47,9 @@
 .anleitung-card h1 {
     color: #9fcfe3;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
