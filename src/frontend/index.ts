@@ -1,15 +1,10 @@
-// index.ts
-// für interaktive index.html nötig (Cards erstellen und Zutaten ansehen)
-
 import {Food, Ingredient} from "./models";
 import {filterRecipes} from "./filterRecipes";
 import {RecipeFilters} from "./recipeFilters";
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const dishes: Food[] = await loadFood();
     const ingredients: Ingredient[] = await loadIngredients();
 
-    showFood(dishes, ingredients);
     showIngredient(ingredients);
 
     // Dad Joke laden
@@ -34,6 +29,8 @@ window.addEventListener("storage", async (event) => {
         }
 
         showFood(dishes, ingredients);
+
+        console.log("Heyy loggin is not fun")
     }
 });
 
@@ -57,34 +54,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     countIngredients.addEventListener("change", applyFilters)*/
 })
-
-const loadFood = async () => {
-    try {
-        const response = await fetch('http://localhost:3000/api/food');
-        console.log(response.status);
-        const food = await response.json()
-        console.log(food);
-        return food;
-    }
-    catch (e) {
-        let err = e as Error;
-        console.log(`${err.message}`);
-    }
-}
-
-const loadIngredients = async () => {
-    try {
-        const response = await fetch('http://localhost:3000/api/ingredients');
-        console.log(response.status);
-        const ingredients = await response.json()
-        console.log(ingredients);
-        return ingredients;
-    }
-    catch (e) {
-        let err = e as Error;
-        console.log(`${err.message}`);
-    }
-}
 
 const showFood = (dishes:Food[], ingredients:Ingredient[]) => {
     const availableIngredients = ingredients;
@@ -196,8 +165,34 @@ const showIngredient = (ingredients:Ingredient[]) => {
     })
 }
 
+const loadFood = async () => {
+    try {
+        const response = await fetch('http://localhost:3000/api/food');
+        console.log(response.status);
+        const food = await response.json()
+        console.log(food);
+        return food;
+    }
+    catch (e) {
+        let err = e as Error;
+        console.log(`${err.message}`);
+    }
+}
 
-// Dad Jokes
+const loadIngredients = async () => {
+    try {
+        const response = await fetch('http://localhost:3000/api/ingredients');
+        console.log(response.status);
+        const ingredients = await response.json()
+        console.log(ingredients);
+        return ingredients;
+    }
+    catch (e) {
+        let err = e as Error;
+        console.log(`${err.message}`);
+    }
+}
+
 const loadDadJoke = async () => {
     try {
         const response = await fetch("https://api.api-ninjas.com/v1/dadjokes", {
