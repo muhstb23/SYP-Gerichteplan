@@ -1,0 +1,49 @@
+.anleitung-grid {
+    display: grid;
+    grid-template-columns: auto;
+    align-content: space-evenly;
+    position: sticky;
+    top: 20px;
+    align-self: start;
+}
+
+.grid-grid {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.right {
+    width: 100%;
+    height: 350px;
+    position: sticky;
+    top: 20px;
+}
+
+.anleitung-card h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+/* Card Design */
+.anleitung-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-radius: 16px;
+    padding: 1rem;
+
+    overflow: hidden;              /* 🔥 wichtig */
+    background-clip: padding-box;  /* 🔥 wichtig */
+
+    transform: translateZ(0);      /* 🔧 Firefox Fix */
+    will-change: transform;
+}
+
+.anleitung-card h1 {
+    color: #9fcfe3;
+}
