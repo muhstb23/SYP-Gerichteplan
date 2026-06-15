@@ -76,3 +76,24 @@
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
+
+button {
+    background-color: #42527f;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 16px;
+
+    animation-name: myAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation {
+    0%, 100%   {background-color: red;}
+    20%, 80%  {background-color: yellow; color: black}
+    40%, 60%  {background-color: lime; color: black}
+    50%  {background-color: deepskyblue; color: black}
+}

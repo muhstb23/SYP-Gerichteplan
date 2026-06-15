@@ -127,6 +127,21 @@ const showIngredient = (ingredients) => {
             console.log("likely null - ingredientList - index.ts");
         }
     });
+    const button = document.createElement('button');
+    button.innerHTML = "Change me!";
+    button.className = "colorChange";
+    button.addEventListener("click", async () => {
+        console.log("Im Button");
+        const updates = ingredients.map(ingredient => {
+            ingredient.available = !ingredient.available;
+            return putIngredient(ingredient.name, ingredient.available);
+        });
+        await Promise.all(updates);
+        localStorage.setItem("ingredientsUpdated", Date.now().toString());
+        ingredients = await loadIngredients();
+        showIngredient(ingredients);
+    });
+    ingredientList.appendChild(button);
 };
 const loadFood = async () => {
     try {
